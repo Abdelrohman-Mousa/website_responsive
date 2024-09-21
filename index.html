@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Linking Google fonts for icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- Link SwiperJS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <title>Background Video and Responsive Card Slider</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <nav class="nav">
+      <div class="box">
+      <a href="#"><img src="videoAndImages/logo.avif" style="width:50px"alt=""><a>
+      <ul>
+        <li>Home</li>
+        <li>Developer</li>
+      <a href="#developer"><li class="material-symbols-outlined">stat_minus_3</li></a>
+      </ul>
+    </div>
+    </nav>
+
+
+    <section class="hero">
+      <video autoplay loop muted plays-inline class="back-video">
+        <source src="videoAndImages/open-ai.mp4">
+      </video>
+      <section class="content">
+        <h1>Abdelrohman</h1>
+        <a href="#" class="btn">Explore</a>
+      </section>
+    </section>
+
+    <!-- Responsive Cards Slider -->
+    <div class="container swiper">
+      <div class="card-wrapper">
+        <ul class="card-list swiper-wrapper">
+          <li class="card-item swiper-slide" id="developer">
+            <a href="https://developer.apple.com/app-store/submitting/" target="_blank" class="card-link">
+              <img src="videoAndImages/developer.jpg" alt="Card Image" class="card-image">
+              <p class="badge developer">Developer</p>
+              <h2 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+              <button class="card-button
+              material-symbols-outlined">arrow_forward</button>
+            </a>
+          </li>
+
+          <li class="card-item swiper-slide">
+            <a href="https://designer.microsoft.com/" target="_blank" class="card-link">
+              <img src="videoAndImages/designer.jpg" alt="Card Image" class="card-image">
+              <p class="badge designer">Designer</p>
+              <h2 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+              <button class="card-button
+              material-symbols-outlined">arrow_forward</button>
+            </a>
+          </li>
+
+          <li class="card-item swiper-slide">
+            <a href="https://en.wikipedia.org/wiki/Marketing" target="_blank" class="card-link">
+              <img src="videoAndImages/marketer.jpg" alt="Card Image" class="card-image">
+              <p class="badge marketer">Marketer</p>
+              <h2 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+              <button class="card-button
+              material-symbols-outlined">arrow_forward</button>
+            </a>
+          </li>
+
+          <li class="card-item swiper-slide">
+            <a href="https://ar.wikipedia.org/wiki/%D8%AC%D9%8A%D9%85%D8%B1" target="_blank" class="card-link">
+              <img src="videoAndImages/gamer.jpg" alt="Card Image" class="card-image">
+              <p class="badge gamer">Gamer</p>
+              <h2 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+              <button class="card-button
+              material-symbols-outlined">arrow_forward</button>
+            </a>
+          </li>
+
+          <li class="card-item swiper-slide">
+            <a href="https://www.canva.com/" class="card-link">
+              <img src="videoAndImages/editor.jpg" alt="Card Image" class="card-image">
+              <p class="badge editor">Editor</p>
+              <h2 class="card-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+              <button class="card-button
+              material-symbols-outlined">arrow_forward</button>
+            </a>
+          </li>
+        </ul>
+
+        <div class="swiper-pagination"></div>
+        <div class="swiper-slide-button swiper-button-prev"></div>
+        <div class="swiper-slide-button swiper-button-next"></div>
+      </div>
+    </div>
+    <!-- Link SwiperJS script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Linking custom script -->
+    <script src="script.js"></script>
+  </body>
+</html>

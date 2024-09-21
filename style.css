@@ -1,0 +1,209 @@
+/* Importing Google fonts - Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+* {
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(#ECEFFE, #CED6FB);
+  scroll-behavior: smooth;
+}
+/* Navigation */
+.nav .box {
+  width: 60%;
+  height: auto;
+  padding: 10px;
+  margin: 40px 20% 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 2px solid #ffffff1d;
+  backdrop-filter: blur(3px);
+  z-index: 10;
+}
+.box a img {
+  border-radius: 50%;
+}
+.nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 40px;
+  color: #5372F0;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.card-wrapper {
+  max-width: 1100px;
+  margin: 0 60px 35px;
+  padding: 20px 10px;
+  overflow: hidden;
+}
+/* Start Video */
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-color: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
+  position: relative;
+  padding: 0 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  text-align: center;
+}
+.content h1 {
+  font-size: 160px;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.content h1:hover {
+  -webkit-text-stroke: 2px white;
+  color: transparent;
+  letter-spacing: -16px;
+}
+.content .btn {
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  font-size: 24px;
+  border: 2px solid white;
+  padding: 14px 50px;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+.content .btn:hover {
+  background: #fff;
+  color: #000;
+}
+.back-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+@media (min-aspect-ratio: 16/9) {
+  .back-video {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .back-video {
+    width: auto;
+    height: 100%;
+  }
+}
+/* End Video */
+/* Start Cards Slider */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+.card-list .card-item {
+  list-style: none;
+}
+.card-list .card-item .card-link {
+  user-select: none;
+  display: block;
+  background: #fff;
+  padding: 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+  transition: 0.2s ease;
+}
+.card-list .card-item .card-link:active {
+  cursor: grabbing;
+}
+.card-list .card-item .card-link:hover {
+  border-color: #5372F0;
+}
+.card-list .card-link .card-image {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.card-list .card-link .badge {
+  color: #5372F0;
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  margin: 16px 0 18px;
+  background: #DDE4FF;
+  width: fit-content;
+  border-radius: 50px;
+}
+.card-list .card-link .badge.designer {
+  color: #B22485;
+  background: #F7DFF5;
+}
+.card-list .card-link .badge.marketer {
+  color: #B25A2B;
+  background: #FFE3D2;
+}
+.card-list .card-link .badge.gamer {
+  color: #205C20;
+  background: #D6F8D6;
+}
+.card-list .card-link .badge.editor {
+  color: #856404;
+  background: #fff3cd;
+}
+.card-list .card-link .card-title {
+  font-size: 1.19rem;
+  color: #000;
+  font-weight: 600;
+}
+.card-list .card-link .card-button {
+  height: 35px;
+  width: 35px;
+  color: #5372F0;
+  border-radius: 50%;
+  margin: 30px 0 5px;
+  background: none;
+  cursor: pointer;
+  border: 2px solid #5372F0;
+  transform: rotate(-45deg);
+  transition: 0.4s ease;
+}
+.card-list .card-link:hover .card-button {
+  color: #000;
+  background: #5372F0;
+}
+
+.card-wrapper .swiper-pagination-buliet {
+  height: 13px;
+  width: 13px;
+  opacity: 0.5;
+  background: #5372F0;
+}
+.card-wrapper .swiper-pagination-buliet-active {
+  opacity: 1;
+}
+.card-wrapper .swiper-slide-button {
+  color: #5372F0;
+  margin-top: -35px;
+}
+
+@media screen and (max-width: 768px) {
+  .card-wrapper {
+    margin: 0 10px 25px;
+  }
+  .card-wrapper .swiper-slide-button {
+    display: none;
+  }
+}
+/* End Cards Slider */
